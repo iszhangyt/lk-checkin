@@ -21,10 +21,15 @@ import requests
 import yaml
 
 
-# 日志配置
+# ==================== 日志配置 ====================
+
+# 设置 stdout 编码为 UTF-8，解决 Windows 控制台的 Unicode 问题
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
+    format="[%(asctime)s] [%(levelname)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
     handlers=[
         logging.StreamHandler(sys.stdout)
