@@ -1,0 +1,4 @@
+.venv
+*_cache.json
+config.yaml
+docs/

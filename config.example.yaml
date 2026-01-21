@@ -1,0 +1,19 @@
+# 配置文件
+
+lk:
+  # 方式一：直接配置 security_key（推荐，值固定不变）
+  # security_key: ""
+  
+  # 方式二：配置账号密码（登录获取 key）
+  username: ""
+  password: ""
+
+# 2DFan 签到配置
+2dfan:
+  username: ""
+  password: ""
+
+# Telegram 推送配置
+telegram:
+  bot_token: ""
+  chat_id: ""
