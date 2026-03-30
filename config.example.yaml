@@ -13,6 +13,19 @@ lk:
   username: ""
   password: ""
 
+# GLaDOS 签到配置（仅 Cookie）
+glados:
+  # API 基础地址（域名可能变动）
+  base_url: "https://glados.one"
+  # 签到请求 token，默认从 base_url 域名自动推导（一般不需要填）
+  # 示例: "glados.one"
+  checkin_token: ""
+  # 从浏览器复制请求中的 Cookie（至少包含 koa:sess 和 koa:sess.sig）
+  # 示例: "koa:sess=...; koa:sess.sig=..."
+  cookie: ""
+  # 请求超时（秒）
+  timeout: 30
+
 # Telegram 推送配置
 telegram:
   bot_token: ""
